@@ -9,13 +9,13 @@ import org.dromara.soul.client.common.annotation.SoulClient;
 @org.springframework.stereotype.Service
 public class UserServiceImpl implements UserService {
     @Override
-    @SoulClient(path = "/user/create", desc = "创建用户")
+//    @SoulClient(path = "/user/create", desc = "创建用户")
     public int createUser(UserDTO userDTO) {
         return 1;
     }
 
     @Override
-    @SoulClient(path = "/user/get", desc = "获得用户详细")
+//    @SoulClient(path = "/user/get", desc = "获得用户详细")
     public String getUser(String name) {
         return "hello";
     }
