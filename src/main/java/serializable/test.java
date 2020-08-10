@@ -6,14 +6,17 @@ public class test {
 
     public static void main(String[] args) throws Exception {
 
-        Student stu = new Student();
-        stu.setId(1);
-        stu.setName("Tom");
-        stu.setAge(26);
-//        stu.setScore(9000.0);
-//        serlizableObject(stu); // 序列化
-        Student student = tranferSerObject();
-        System.out.println(student);
+//        Student stu = new Student();
+//        stu.setId(1);
+//        stu.setName("Tom");
+//        stu.setAge(26);
+////        stu.setScore(9000.0);
+////        serlizableObject(stu); // 序列化
+//        Student student = tranferSerObject();
+//        System.out.println(student);
+
+        String s4 = new StringBuilder("ab").append("c").toString();
+        System.out.println(s4 == s4.intern());
 
     }
 

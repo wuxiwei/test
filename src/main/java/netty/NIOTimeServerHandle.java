@@ -23,6 +23,8 @@ public class NIOTimeServerHandle implements Runnable {
             if (bytesRead <= 0) {
                 System.out.println("连接没有数据：" + socketChannel.socket().getRemoteSocketAddress());
                 return;
+            } else {
+                System.out.println(new String(requestBuffer.array()));
             }
             // 如果读取到了数据，则需要考虑粘包、解包的问题，这个while代码是为了读取一个完整的请求信息"GET CURRENT TIME"
             System.out.println("连接有数据开始读：" + socketChannel.socket().getRemoteSocketAddress());
